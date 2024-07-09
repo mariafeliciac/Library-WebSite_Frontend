@@ -1,0 +1,14 @@
+﻿
+
+<div class="me-4">
+    @{
+        string username = User.Identity.Name;
+    }
+    <h5 id="username">@username</h5>
+</div>
+<div>
+    <form action="Auth/Logout" method="get">
+        <input type="submit" value="Logout" class="btn btn-secondary" />
+    </form>
+</div>
+

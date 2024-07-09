@@ -1,0 +1,25 @@
+﻿@model Library.Web.Site.Models.ShareModels.ResultAddBook
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div id="resultAddBook">
+    @{
+        ResultAddBook resultAddBook = Model;
+        string resultoperation;
+        if (resultAddBook == ResultAddBook.Added)
+        {
+            resultoperation = "Add Book operation successful !";
+        }
+        else
+        {
+            resultoperation = "Book already present.\r\nThe only quantity is added !";
+        }
+    }
+    <h1>@resultoperation</h1>
+    @{
+        Html.RenderPartial("_BackToHomePage");
+    }
+</div>

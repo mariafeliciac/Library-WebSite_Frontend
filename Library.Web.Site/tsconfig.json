@@ -1,0 +1,15 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "outDir": "wwwroot/js",
+      //"lib": [ "es2019", "dom", "DOM.Iterable" ]
+  },
+  "include": [
+    "wwwroot/scripts/**/*"
+  ]
+}

@@ -1,0 +1,74 @@
+﻿#buttonCreateBook {
+    border: 1px solid orangered;
+    background-color: orange;
+}
+
+#resultAddBook {
+    color: orange;
+}
+
+
+.form-control:focus {
+    border-color: orange;
+    box-shadow: 0 0 5px orange;
+}
+
+#yesnot {
+    display: flex;
+    justify-content: space-between;
+}
+
+#yes {
+    color: aliceblue;
+}
+
+#AccessDenied {
+    color: red;
+}
+
+.btn-primary {
+    background-color: darkorange;
+    color: white;
+    border-color: orangered;
+}
+
+    .btn-primary:hover {
+        background-color: #ffb34e;
+        border-color: orange;
+    }
+
+
+.btn-secondary {
+    background-color: red;
+    border-color: darkred;
+}
+
+    .btn-secondary:hover {
+        color: white;
+        background-color: salmon;
+        border-color: darksalmon;
+    }
+
+a {
+    font-weight: bold;
+    color: black;
+}
+
+    a:hover {
+        color: red;
+    }
+
+#returnHome {
+    font-weight: bold;
+    color: red;
+}
+
+    #returnHome:hover {
+        color: palevioletred;
+    }
+
+
+#username {
+    color: #e76207;
+}
+

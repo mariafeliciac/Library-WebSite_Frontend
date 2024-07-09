@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Library.Web.Site.Models.ModelDto.BookDto.BookSearchResponse>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AuthorName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AuthorSurname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PublishingHouse)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AuthorName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AuthorSurname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PublishingHouse)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "EditForm", new Book() { BookId = item.BookId })
+                        @Html.ActionLink("Details", "Details", new Book { Title = item.Title, AuthorName = item.AuthorName, AuthorSurname = item.AuthorSurname, PublishingHouse = item.PublishingHouse })
+                        @Html.ActionLink("Delete", "DeleteBookInformation", new Book { BookId = item.BookId, Title = item.Title, AuthorName = item.AuthorName, AuthorSurname = item.AuthorSurname, PublishingHouse = item.PublishingHouse, Quantity = item.Quantity })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

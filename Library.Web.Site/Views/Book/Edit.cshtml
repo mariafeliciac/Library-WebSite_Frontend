@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>@{
+        var message = Model;
+    }
+    @message </h1>
+
+@{
+    Html.RenderPartial("_BackToHomePage");
+}
+

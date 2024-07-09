@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>
+    @{
+        List<string> messages = Model;
+
+       foreach(string message in messages)
+        {
+           <h2>@message</h2>
+           <hr />
+        }
+     
+    }
+
+    @{
+        Html.RenderPartial("_BackToHomePage");
+    }
+
